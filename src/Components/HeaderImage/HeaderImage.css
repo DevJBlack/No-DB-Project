@@ -1,0 +1,14 @@
+.header-image {
+  background-image: none;
+  animation: logoSpin infinite 10s linear;
+  pointer-events: none;
+}
+
+@keyframes logoSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

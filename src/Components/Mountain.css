@@ -1,0 +1,10 @@
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.navigation {
+  list-style: none;
+  color: white;
+}

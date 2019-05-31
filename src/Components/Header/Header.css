@@ -1,0 +1,40 @@
+.navBar {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    position: relative;
+    animation: heading;
+    animation-duration: 3s;
+    /* animation-fill-mode: forwards */
+  }
+  
+  @keyframes heading {
+    0% {top: -50px}
+    100% {top: 200px}
+  }
+
+
+.navBar > h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+.trail {
+  color: white;
+  font-family: cursive;
+}
+
+.imgDisplay {
+  margin: 0 35px;
+}
+
+.nameDisplay {
+  margin: 0 35px;
+  font-family: cursive;
+  color: white;
+}
+
