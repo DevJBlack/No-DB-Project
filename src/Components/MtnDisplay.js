@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header/Header'
 import Mountain from './Mountain'
 import CreateMountain from './CreateMountain'
+import './MtnDisplay.css'
 
 class MtnDisplay extends Component {
   constructor() {
@@ -52,18 +53,22 @@ class MtnDisplay extends Component {
     const { mountains } = this.state
     return(
       <div>
-        <Header/>
-        <CreateMountain createMountains={this.createMountains}/>
-        {mountains.map(mountain => {
-          console.log(mountain)
-          return (
-            <Mountain  key={mountain.id} mountain={mountain} deleteMountains={this.deleteMountains} editMountains={this.editMountains}/>
-            
-            )
-          })}
+         <Header/>
+        <div>
+          <CreateMountain createMountains={this.createMountains}/>
+        </div>
+        <div className="mountain">
+          {mountains.map(mountain => {
+            console.log(mountain)
+            return (
+              <Mountain  key={mountain.id} mountain={mountain} deleteMountains={this.deleteMountains} editMountains={this.editMountains}/>
+              
+              )
+            })}
+         </div>
       </div>
     )
   }
 }
-
+     
 export default MtnDisplay

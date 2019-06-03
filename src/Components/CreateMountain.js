@@ -37,7 +37,7 @@ class CreateMountain extends Component {
     return(
       <div className="input-fields">
          <div className="input-one">
-          <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white', placeholder: 'red'}}type="text" placeholder="picture" value={this.state.pic} onChange={this.handleValue} name="pic"/>
+          <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}}type="text" placeholder="picture" value={this.state.pic} onChange={this.handleValue} name="pic"/>
          </div> 
          <div className="input-two">
           <input style={{borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="name" value={this.state.name} onChange={this.handleValue} name="name"/>

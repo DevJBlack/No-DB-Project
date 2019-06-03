@@ -2,7 +2,7 @@ let id = 1
 let mountains = [
   {
     id: id++,
-    pic: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mount_Timpanogos%2C_UT.jpg/220px-Mount_Timpanogos%2C_UT.jpg',
+    pic: 'http://www.crockettclan.org/blog/wp-content/uploads/2016/07/Mount_Timpanogos.jpg',
     name: "Mount Timpanogos",
     elevation: 11752,
     trail: "Timpooneke Trail",
@@ -10,7 +10,7 @@ let mountains = [
   },
   {
     id: id++,
-    pic: 'https://media.nationalgeographic.org/assets/photos/000/285/28549.jpg',
+    pic: 'https://i1.wp.com/www.yosemitetales.com/wp-content/uploads/2015/06/half-dome-close-up-by-jeff-kreider.jpg',
     name: "Half Dome",
     elevation: 8800,
     trail: "Half Dome Trail",
@@ -20,6 +20,7 @@ let mountains = [
 
 module.exports = {
   readMountains: (req, res) => res.send(mountains),
+
   createMountains: (req, res) => {
     let {pic, name, trail, trailStats} = req.body
     createMountain = {
@@ -32,6 +33,7 @@ module.exports = {
     mountains.push(createMountain)
     res.send(mountains)
   },
+  
   deleteMountains: (req, res) => {
     let { id } = req.params;
 

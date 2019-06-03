@@ -1,7 +1,33 @@
-.boxes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center
+html {
+  max-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+
+
+.boxes .back-ground {
+  padding: 40px;
+  width: 400px;
+  height: 300px;
+  /* border: 2px black solid; */
+  margin:75px;
+}
+
+
+.back-ground {
+  padding: 10px;
+}
+
+.back-ground ul {
+  margin: 10px;
+}
+
+.pic {
+ 
+  width: 100%;
 }
 
 .navigation {

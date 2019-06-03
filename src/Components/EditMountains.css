@@ -1,0 +1,10 @@
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+::placeholder {
+  color: yellow;
+  text-align: center;
+}

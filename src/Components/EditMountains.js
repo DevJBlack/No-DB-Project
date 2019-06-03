@@ -47,18 +47,15 @@ class EditMountains extends Component {
       <div>   
        {this.state.edit ?
        <div className="input-boxes">
-        <input type="text" placeholder="pic" value={this.state.pic} name="pic" onChange={this.handleChange}/>
-        <input type="text" placeholder="name" value={this.state.name} name="name" onChange={this.handleChange}/>
-        <input type="text" placeholder="trail" value={this.state.trail} name="trail" onChange={this.handleChange}/>
-        <input type="text" placeholder="trailStats" value={this.state.trailStats} name="trailStats" onChange={this.handleChange}/>
+        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="pic" value={this.state.pic} name="pic" onChange={this.handleChange}/>
+        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="name" value={this.state.name} name="name" onChange={this.handleChange}/>
+        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="trail" value={this.state.trail} name="trail" onChange={this.handleChange}/>
+        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="trailStats" value={this.state.trailStats} name="trailStats" onChange={this.handleChange}/>
         <button onClick={() => this.editMountain()}>Edit</button>
         <button onClick={this.toggleEdit}>Cancel</button>
        </div>
         :
         <div>
-          {/* <p>{this.props.mountain.name}</p>
-          <p>{this.props.mountain.trail}</p>
-          <p>{this.props.mountain.trailStats}</p> */}
         <button onClick={this.toggleEdit}>Edit</button>
        </div>
       }  
