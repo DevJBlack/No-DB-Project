@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react' 
+import './EditMountains.css'
 
 class EditMountains extends Component {
   constructor(props){
@@ -47,23 +48,23 @@ class EditMountains extends Component {
       <div>   
        {this.state.edit ?
        <div className="input-boxes">
-        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="pic" value={this.state.pic} name="pic" onChange={this.handleChange}/>
-        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="name" value={this.state.name} name="name" onChange={this.handleChange}/>
-        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="trail" value={this.state.trail} name="trail" onChange={this.handleChange}/>
-        <input style={{ borderRadius: 25, background: 'none', border: '2px solid lightskyblue', color: 'white'}} type="text" placeholder="trailStats" value={this.state.trailStats} name="trailStats" onChange={this.handleChange}/>
+        <input type="text" placeholder="pic" value={this.state.pic} name="pic" onChange={this.handleChange}/>
+        <input type="text" placeholder="name" value={this.state.name} name="name" onChange={this.handleChange}/>
+        <input type="text" placeholder="trail" value={this.state.trail} name="trail" onChange={this.handleChange}/>
+        <input type="text" placeholder="trailStats" value={this.state.trailStats} name="trailStats" onChange={this.handleChange}/>
+       <div>
         <button onClick={() => this.editMountain()}>Edit</button>
+       </div> 
+       <div>
         <button onClick={this.toggleEdit}>Cancel</button>
+       </div>
        </div>
         :
         <div>
-        <button onClick={this.toggleEdit}>Edit</button>
+        <button className="out-btn" onClick={this.toggleEdit}>Edit</button>
        </div>
       }  
-      {/* {this.state.edit ?
-        :
-    
-      } */}
-      
+
       </div>
     )
   }

@@ -1,10 +1,53 @@
 .input-boxes {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  flex-wrap: wrap;
 }
 
 ::placeholder {
   color: yellow;
   text-align: center;
+}
+
+.input-boxes input {
+  border-radius: 25px;
+  background: none;
+  border: 2px solid lightskyblue;
+  color: white;
+  margin: 5px;
+}
+
+.input-boxes button {
+  margin: 0 50px;
+  height: 25px;
+  width: 75px;
+  border-radius: 15px;
+  border: 2px solid lightskyblue;
+  background: lightskyblue;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+  transition: all 0.2s
+}
+
+.input-boxes button:hover {
+  color: white;
+  background: lightskyblue;
+  border-color: white;
+}
+
+.out-btn {
+  height: 25px;
+  width: 75px;
+  border-radius: 15px;
+  background: lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+.out-btn:hover {
+  color: white;
+  background: lightskyblue;
+  border-color: white;
 }

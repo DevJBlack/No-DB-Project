@@ -16,10 +16,12 @@ class Mountain extends Component {
         </ul>
       <div>
         <EditMountains mountain={mountain} editMountains={this.props.editMountains}/>
-        <button onClick={() => deleteMountains(mountain.id)}>Delete</button>
+      <div className="button">
+        <button className="delete" onClick={() => deleteMountains(mountain.id)}>Delete</button>
+      </div>  
       </div>  
         <img className="pic" src={mountain.pic} alt=""/>
-    
+     
         
       </div>
      </div> 
