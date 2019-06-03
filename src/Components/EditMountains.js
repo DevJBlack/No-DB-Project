@@ -5,7 +5,6 @@ class EditMountains extends Component {
   constructor(props){
     super(props)
 
-    // let { name, trail, trailStats } = props.mountain
 
     this.state = {
       pic: '',
@@ -43,7 +42,6 @@ class EditMountains extends Component {
     })
   }
   render(){
-    console.log(this.props)
     return(
       <div>   
        {this.state.edit ?

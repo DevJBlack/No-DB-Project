@@ -7,7 +7,7 @@ class Mountain extends Component {
   render(){
     const { mountain} = this.props
     return(
-     <div className="boxes">
+     <section className="boxes">
       <div className="back-ground">
         <ul className="navigation">
           <li>Name: {mountain.name}</li>
@@ -15,14 +15,15 @@ class Mountain extends Component {
           <li>Trail Details: {mountain.trailStats}</li>
         </ul>
       <div>
-        <EditMountains mountain={mountain} editMountains={this.props.editMountains} deleteMountains={this.props.deleteMountains}/>
-      
+        <EditMountains 
+        mountain={mountain} 
+        editMountains={this.props.editMountains} 
+        deleteMountains={this.props.deleteMountains}
+        />     
       </div>  
-        <img className="pic" src={mountain.pic} alt=""/>
-     
-        
+        <img className="pic" src={mountain.pic} alt=""/>       
       </div>
-     </div> 
+     </section> 
     )
   }
 }

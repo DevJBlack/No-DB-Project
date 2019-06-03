@@ -59,10 +59,13 @@ class MtnDisplay extends Component {
         </div>
         <div className="mountain">
           {mountains.map(mountain => {
-            console.log(mountain)
             return (
-              <Mountain  key={mountain.id} mountain={mountain} deleteMountains={this.deleteMountains} editMountains={this.editMountains}/>
-              
+              <Mountain  
+              key={mountain.id} 
+              mountain={mountain} 
+              deleteMountains={this.deleteMountains} 
+              editMountains={this.editMountains}
+              />             
               )
             })}
          </div>
