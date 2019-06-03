@@ -5,7 +5,7 @@ import EditMountains from './EditMountains';
 
 class Mountain extends Component {
   render(){
-    const { mountain, deleteMountains } = this.props
+    const { mountain} = this.props
     return(
      <div className="boxes">
       <div className="back-ground">
@@ -15,10 +15,8 @@ class Mountain extends Component {
           <li>Trail Details: {mountain.trailStats}</li>
         </ul>
       <div>
-        <EditMountains mountain={mountain} editMountains={this.props.editMountains}/>
-      <div className="button">
-        <button className="delete" onClick={() => deleteMountains(mountain.id)}>Delete</button>
-      </div>  
+        <EditMountains mountain={mountain} editMountains={this.props.editMountains} deleteMountains={this.props.deleteMountains}/>
+      
       </div>  
         <img className="pic" src={mountain.pic} alt=""/>
      

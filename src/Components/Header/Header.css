@@ -11,8 +11,8 @@
   }
   
   @keyframes heading {
-    0% {top: -50px}
-    100% {top: 200px}
+    0% {top: -100px}
+    100% {top: 400px}
   }
 
 

@@ -61,7 +61,13 @@ class EditMountains extends Component {
        </div>
         :
         <div>
-        <button className="out-btn" onClick={this.toggleEdit}>Edit</button>
+          <div className="btn-container">
+            <button className="out-btn" onClick={this.toggleEdit}>Edit</button>
+          <div className="button">
+            <button className="delete" onClick={() => this.props.deleteMountains(this.props.mountain.id)}>Delete</button>
+          </div>  
+              </div>
+              
        </div>
       }  
 

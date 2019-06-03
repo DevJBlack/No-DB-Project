@@ -1,9 +1,26 @@
-.input-fields {
+.input-fields{
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
+
+
+.input-fields input {
+  border-radius: 25px; 
+  background:  none;
+  border: 2px solid lightskyblue;
+  color: white;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+
 ::placeholder {
   color: yellow;
   text-align: center;
